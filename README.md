@@ -1,5 +1,7 @@
 - Install react vite 
 - install tailwindcss
+- Header
+- login form
 
 # Features
 - login & signup
