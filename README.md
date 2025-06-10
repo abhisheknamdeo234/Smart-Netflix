@@ -5,6 +5,16 @@
 - login form
 - form validation
  - useRef hooks
+ - firebase setup
+ - deployin our app to production
+ - create signup user account
+ - Implement Signup user Api
+ - created our redux store with userSlice
+ - implemented signout
+ - update profile
+ - fetch movies form tmdb
+
+ 
 
 # Features
 - login & signup
