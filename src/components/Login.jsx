@@ -3,9 +3,10 @@ import Header from './Header'
 import { checkValidData } from '../utils/Validate';
 import { createUserWithEmailAndPassword,signInWithEmailAndPassword,updateProfile} from "firebase/auth";
 import {auth} from "../utils/Firebase"
-import { useNavigate } from 'react-router-dom';
+
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/UserSlice';
+import { user_logo } from '../utils/Constants';
 
 
 
@@ -14,7 +15,7 @@ import { addUser } from '../utils/UserSlice';
 const Login = () => {
     const[isSignForm,setSignInForm] = useState(true);
     const[errorMessage,setErrorMessage] = useState(null);
-    const navigate = useNavigate();
+    
     const dispatch = useDispatch();
 
     const name = useRef(null);
@@ -41,7 +42,7 @@ const Login = () => {
     // Signed up 
     const user = userCredential.user;
     updateProfile(user, {
-  displayName: name.current.value, photoURL: "https://example.com/jane-q-user/profile.jpg"
+  displayName: name.current.value, photoURL: user_logo
     }).then(() => {
   // Profile updated!
   // ...
@@ -53,7 +54,7 @@ const Login = () => {
           displayName:displayName,
           photoURL:photoURL}));
 
-  navigate("/browse");
+ 
     }).catch((error) => {
   // An error occurred
    setErrorMessage(error.message);
@@ -75,7 +76,7 @@ const Login = () => {
     // Signed in 
     const user = userCredential.user;
     // ...
-     navigate("/browse")
+     
 
   })
   .catch((error) => {

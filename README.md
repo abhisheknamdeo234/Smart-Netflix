@@ -13,6 +13,12 @@
  - implemented signout
  - update profile
  - fetch movies form tmdb
+ - bug fix - sign in user displayname and profile picture update
+ - bug fix = if user is not loggin then redirect user to login page
+ - unsubscribe to the onAuthstatechanged callback
+ - added hardcoded values images to constant filess
+ - register for tmdb api and get access token
+ - get data from tmdb now palying movie list api
 
  
 
