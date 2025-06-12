@@ -19,6 +19,12 @@
  - added hardcoded values images to constant filess
  - register for tmdb api and get access token
  - get data from tmdb now palying movie list api
+ - custom hook for now playing movie- updat store with movies data
+ - created movie slice
+ - planning for main container and secondary container
+ - fatch data for trailer video
+ - update the store with trailer video
+ - emdded the youtube video and make it autoplay and mute
 
  
 
