@@ -25,6 +25,13 @@
  - fatch data for trailer video
  - update the store with trailer video
  - emdded the youtube video and make it autoplay and mute
+ - tailwind classses to make main container look awesome
+ - build secondary Component
+ - build movie list
+ - build movie card
+ - tmdb image cdn url
+ - made the browser page amazing tailwind css 
+ - use popular movies custom hook
 
  
 

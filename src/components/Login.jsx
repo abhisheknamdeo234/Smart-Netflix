@@ -27,8 +27,7 @@ const Login = () => {
     } 
 
     const HandleButtonClick=()=>{
-        console.log(email.current.value);
-        console.log(password.current.value);
+        
         
         const message=checkValidData(email.current.value,password.current.value);
         setErrorMessage(message);
@@ -47,7 +46,7 @@ const Login = () => {
   // Profile updated!
   // ...
    const {uid,email,displayName,photoURL} = auth.currentUser;
-      console.log(email +uid);
+      
       dispatch(addUser({
           uid:uid,
           email:email,

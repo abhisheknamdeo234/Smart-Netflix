@@ -9,10 +9,12 @@ import { onAuthStateChanged } from "firebase/auth";
 import { LOGO, user_logo } from '../utils/Constants';
 
 
+
 const Header = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch(); 
   const user  = useSelector(store=> store.user);
+  
 
 
     useEffect(()=>{
@@ -21,7 +23,7 @@ const Header = () => {
     // User is signed in, see docs for a list of available properties
     // https://firebase.google.com/docs/reference/js/auth.user
     const {uid,email,displayName,photoURL} = user;
-    console.log(email +uid);
+    
     dispatch(addUser({
         uid:uid,
         email:email,
