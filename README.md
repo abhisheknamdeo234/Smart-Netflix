@@ -32,7 +32,9 @@
  - tmdb image cdn url
  - made the browser page amazing tailwind css 
  - use popular movies custom hook
-
+ - gpt search feature
+ - -pgt searchbar
+ - multi language gpt searchpage
  
 
 # Features
