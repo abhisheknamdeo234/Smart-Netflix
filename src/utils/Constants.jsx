@@ -20,7 +20,7 @@ export const SUPPORTED_LANGUAGES = [{indentifier:"en",name:"English"},
   {indentifier:"spanish",name:"Spanish"}
 ] 
 
-export const GPT_KEY ="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"
+
 
 export const gemini_key = "AIzaSyCfbwKgV2wdZaHCuytiRombbdJy_PmfWo8";
 
