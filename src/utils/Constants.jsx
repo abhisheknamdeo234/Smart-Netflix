@@ -24,17 +24,5 @@ export const SUPPORTED_LANGUAGES = [{indentifier:"en",name:"English"},
 
 export const gemini_key = "AIzaSyCfbwKgV2wdZaHCuytiRombbdJy_PmfWo8";
 
-// export const Api_gemini={
-//     method: "POST", // Method should be a string and inside the options object
-//     headers: {
-//       "Content-Type": "application/json", // Important: Tell the server you're sending JSON
-//     },
-//     body: JSON.stringify({ // Data goes in the 'body' and must be stringified JSON
-//       contents: [{ parts: [{ text: gptQuery }] }],
-//       // You can add generation config or safety settings here if needed:
-//       // generationConfig: {
-//       //   temperature: 0.7,
-//       //   maxOutputTokens: 100,
-//       // },
-//     }),
-//   }
+
+
