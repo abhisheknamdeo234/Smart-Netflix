@@ -65,11 +65,11 @@ return ()=> unsubscribe();
 });
   }
   return (
-    <div className='absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between'>
-        <img className="w-44" src={LOGO}
+    <div className='absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-between'>
+        <img className="w-44 mx-auto md:mx-0" src={LOGO}
          alt ="logo"/>
          
-         {user &&(<div className='flex '>
+         {user &&(<div className='flex justify-between '>
           {showGptSearch && (<select className='p-2 h-10 m-5 bg-gray-100/35' onChange={handleLanguageChange}>
             {SUPPORTED_LANGUAGES.map((lang)=><option key={lang.indentifier} value={lang.indentifier}>{lang.name}</option>)}
             {/* <option value="en">English</option>
@@ -79,7 +79,7 @@ return ()=> unsubscribe();
 
           <button  onClick={handleGptSearchClick} 
           className='py-2 px-2 mx-2 my-4 bg-white/35 h-11 text-white rounded-lg'>{showGptSearch ? "Homepage":"AI Search"}</button>
-      <img className="w-10 h-10 m-4" src={user?.photoURL} alt="user logo"/>
+      <img className="w-10 h-10 m-4 hidden md:block" src={user?.photoURL} alt="user logo"/>
       <button onClick={handleSignout} className="font-bold text-white">Sign out</button>
     </div>)
          }

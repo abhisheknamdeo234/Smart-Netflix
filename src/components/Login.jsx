@@ -93,12 +93,12 @@ const Login = () => {
     
     <div>
         <Header/>
-        <div className='absolute'>
+        <div className='absolute '>
 
-        <img src="https://assets.nflxext.com/ffe/siteui/vlv3/af2fac72-d956-4952-8686-4d45d359d78c/web/IN-en-20250526-TRIFECTA-perspective_5db3e163-56f7-47c7-9a65-b79b9d76bf24_small.jpg"
+        <img  className="h-screen object-cover" src="https://assets.nflxext.com/ffe/siteui/vlv3/af2fac72-d956-4952-8686-4d45d359d78c/web/IN-en-20250526-TRIFECTA-perspective_5db3e163-56f7-47c7-9a65-b79b9d76bf24_small.jpg"
         alt="background img"/>
         </div>
-        <form onSubmit={(e)=>e.preventDefault()}className='w-3/12  absolute  p-12 bg-black/80 my-36 mx-auto  right-0 left-0 text-white rounded-md '>
+        <form onSubmit={(e)=>e.preventDefault()}className='w-full md:w-3/12  absolute  p-12 bg-black/80 my-36 mx-auto  right-0 left-0 text-white rounded-md '>
         <h1 className='font-bold text-3xl py-4 ' >{isSignForm ? "Sign In" : "SignUp" }</h1>
             
              {!isSignForm && (<input ref ={name} type='text' 

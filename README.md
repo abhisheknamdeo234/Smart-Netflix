@@ -35,7 +35,12 @@
  - gpt search feature
  - -pgt searchbar
  - multi language gpt searchpage
- 
+ - gemini search bar 
+ - made search page where we cna search our favoreite genre
+ - memoaization for apis 
+ - feteched gemini movie suggestion from tmdb and createe slice
+ - reused component movielist  
+ - made site responsive
 
 # Features
 - login & signup
